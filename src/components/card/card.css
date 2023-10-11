@@ -1,0 +1,150 @@
+.card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 327px;
+    flex-shrink: 0;
+    border-radius: 15px;
+    background: var(--very-dark-blue-card-bg, #15263F);
+    box-shadow: 0px 25px 50px 0px rgba(0, 0, 0, 0.10);
+    padding: 24px;
+}
+
+.main-image {
+    width: 100%;
+}
+
+.title {
+    width: 278px;
+    color: var(--White, #FFF);
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-top: 24px;
+}
+
+.description-paragraph {
+    width: 278px;
+    color: var(--Soft-Blue, #8BACD9);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 26px;
+    margin-top: 12px;
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 16px;
+}
+
+.info div {
+    display: flex;
+    align-items: center;
+}
+
+.etherium {
+    color: var(--Cyan, #00FFF8);
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    gap: 6.48px;
+}
+
+.clock {
+    color: var(--Soft-Blue, #8BACD9);
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    gap: 7.69px;
+}
+
+.card hr {
+    width: 100%;
+    margin-top: 16px;
+    height: 1px;
+    background: var(--very-dark-blue-line, #2E405A);
+    border: none;
+}
+
+.author {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    gap: 16px;
+    margin-top: 16px;
+}
+
+.author p {
+    color: var(--Soft-Blue, #8BACD9);
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.author p span {
+    color: var(--White, #FFF);
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+@media screen and (min-width: 1024px) {
+    .card {
+        width: 350px;
+    }
+    .title {
+        width: 302px;
+    }
+    .description-paragraph {
+        width: 302px;
+        margin-top: 16px;
+    }
+    .info {
+        margin-top: 24px;
+    }
+    .etherium {
+        font-size: 16px;
+    }
+    .clock {
+        font-size: 16px;
+    }
+    .card hr {
+        margin-top: 24px;
+    }
+    .author p{
+        font-size: 16px;
+    }
+    .author p span {
+        font-size: 16px;
+        cursor: pointer;
+        color: var(--Cyan, #00FFF8);;
+    }
+    .overlay {
+        width: 302px;
+        height: 302px;
+        position: relative;
+    }
+    
+    .overlay:hover:before {
+        content: "";
+        background-image: url(../../assets/Eye.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 255, 248, 0.503);
+        position: absolute;
+        border-radius: 8px;
+        top: 0;
+        left: 0;
+    }
+}
