@@ -101,6 +101,7 @@
     .card {
         width: 350px;
     }
+    
     .title {
         width: 302px;
     }
@@ -132,6 +133,7 @@
         width: 302px;
         height: 302px;
         position: relative;
+        cursor: pointer;
     }
     
     .overlay:hover:before {
